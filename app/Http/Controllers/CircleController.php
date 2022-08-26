@@ -38,15 +38,13 @@ class CircleController extends Controller
             else if ($num_ % 5 == 0){
                 return perimeterOfCircle($num_);
             }
-            else {
-                return $num_;
-            }
+            return $num_;
         }
 
         for ($i = 1; $i <= 100; $i++){
             $number = getNumber($i);
-            $formatedNumber = number_format($number, 2, '.', '');
-            echo $formatedNumber . "<br>";
+            $formattedNumber = number_format($number, 2, '.', '');
+            echo $formattedNumber . "<br>";
         }
     }
 }
